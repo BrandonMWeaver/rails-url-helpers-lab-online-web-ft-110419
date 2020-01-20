@@ -10,8 +10,9 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    set_student.active = true
-    redirect "students/#{set_student.id}/show"
+    student = set_student
+    student.active = true
+    redirect "students/#{student.id}/show"
   end
   
   private
