@@ -1,6 +1,6 @@
-class CreateStudents < ActiveRecord::Migration
+class AddActiveToStudents < ActiveRecord::Migration
   def change
-    add_column
+    add_column :students,
     end
   end
 end
