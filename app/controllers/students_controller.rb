@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    student = set_student
+    student = Student.find(params[:id])
     student.active = true
     redirect "students/#{student.id}/show"
   end
