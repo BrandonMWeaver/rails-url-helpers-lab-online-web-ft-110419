@@ -2,7 +2,7 @@
   <% @students.each do |student| %>
     <div>
       <%= student.to_s %>
-      <%= link_to student.to_s, activate_student_path(student) %>
+      <%= link_to student.to_s, student_path(student) %>
     </div>
   <% end %>
 </div>
